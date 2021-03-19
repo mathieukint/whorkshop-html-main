@@ -27,16 +27,16 @@
             <form action="/send" method="POST">
 
                 <label for="prenom_personne">Prénom</label>
-                <input type="texte" name="prenom" id="prenom_personne"><br>
+                <input type="texte" name="prenom" id="prenom_personne" required><br>
 
                 <label for="nom_personne">Nom</label>
-                <input type="texte" name="nom" id="nom_personne"><br>
+                <input type="texte" name="nom" id="nom_personne" required><br>
 
                 <label for="tel_personne">Téléphone</label>
-                <input type="tel" name="tel" id="tel_personne"><br>
+                <input type="tel" name="tel" id="tel_personne" required><br>
 
                 <label for="mail_personne">Adresse mail</label>
-                <input type="email" name="mail" id="mail_personne"><br>
+                <input type="email" name="mail" id="mail_personne" minlength ="4" required><br>
 
                 <select id="Canal de contact favori" multiple>
                     <option value="mail">Mail</option>
@@ -44,7 +44,7 @@
                 </select><br>
 
                 <h4>Votre message</h4>
-                <textarea rows="5" cols="50"></textarea><br>
+                <textarea rows="5" cols="50" maxlength ="200" required></textarea><br>
 
                 <button type="submit">Valider</button>
 
